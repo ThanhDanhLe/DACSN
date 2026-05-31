@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Codework/DACSN/FPGA_GOWIN/full_system/full_system_GOWIN_camera_live_800x600_40/sim
+vimage_processing_vfb_stream
+Z1 !s110 1779607448
+!i10b 1
+!s100 3ecV5Y<gU3iZMHj12AfT;1
+IOBh<<V@E[jRTOLCL`12DL3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1779540134
+8reference/image_processing_vfb_stream.v
+Freference/image_processing_vfb_stream.v
+L0 11
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1779607448.000000
+Z5 !s107 tb_streaming_mnist_capture_equivalence.v|../src/streaming_mnist_capture.v|reference/image_processing_vfb_stream.v|reference/leaf_cells/leaf_subtractor.v|reference/leaf_cells/leaf_adder.v|
+Z6 !s90 -quiet|-work|work_eq_dbg|reference/leaf_cells/leaf_adder.v|reference/leaf_cells/leaf_subtractor.v|reference/image_processing_vfb_stream.v|../src/streaming_mnist_capture.v|tb_streaming_mnist_capture_equivalence.v|
+!i113 1
+Z7 o-quiet -work work_eq_dbg
+Z8 tCvgOpt 0
+vleaf_adder
+R1
+!i10b 1
+!s100 QO_RD7?[PDhb:h8[g^<HL0
+IjmMgA:Dnb86IJB?`8eP:G2
+R2
+R0
+w1779504162
+8reference/leaf_cells/leaf_adder.v
+Freference/leaf_cells/leaf_adder.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vleaf_subtractor
+R1
+!i10b 1
+!s100 MhFQclUTK1OJD`hck1V3Z2
+Im[8MEPIIoEN=c^L_o0PE00
+R2
+R0
+w1779507357
+8reference/leaf_cells/leaf_subtractor.v
+Freference/leaf_cells/leaf_subtractor.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vstreaming_mnist_capture
+R1
+!i10b 1
+!s100 oMN6d8EoT@zzJ0HmA2h;^1
+Ik0EV[OgFnlhNbLX]fYZBI0
+R2
+R0
+w1779587362
+8../src/streaming_mnist_capture.v
+F../src/streaming_mnist_capture.v
+L0 16
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vtb_streaming_mnist_capture_equivalence
+R1
+!i10b 1
+!s100 :[AL4:Yd2iYg5BZkKLh9g1
+I2KRTH2P:oKXWI727[XF=d3
+R2
+R0
+w1779587545
+8tb_streaming_mnist_capture_equivalence.v
+Ftb_streaming_mnist_capture_equivalence.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

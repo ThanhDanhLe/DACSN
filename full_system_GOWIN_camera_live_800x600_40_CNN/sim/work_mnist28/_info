@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Codework/DACSN/FPGA_GOWIN/full_system/full_system_GOWIN_camera_live_800x600_40_CNN
+vleaf_addr_28_mul_shiftadd
+Z1 !s110 1780201262
+!i10b 1
+!s100 dIBjKz_cgM=UNT8R<1d>H0
+IiXE1Y5WmQHhQ_4=F4:7XQ2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1779750833
+8src/leaf_cells/leaf_addr_28_mul_shiftadd.v
+Fsrc/leaf_cells/leaf_addr_28_mul_shiftadd.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1780201262.000000
+!s107 src/leaf_cells/leaf_addr_28_mul_shiftadd.v|
+!s90 -work|sim/work_mnist28|src/leaf_cells/leaf_addr_28_mul_shiftadd.v|
+!i113 1
+Z5 o-work sim/work_mnist28
+Z6 tCvgOpt 0
+vmnist28_row_cache_bridge
+R1
+!i10b 1
+!s100 l]4Gn7EJYil=N1^8^ZI:90
+IePb@67T<fSTTAJ8iF]KHQ2
+R2
+R0
+w1780201219
+8src/video/mnist28_row_cache_bridge.v
+Fsrc/video/mnist28_row_cache_bridge.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 src/video/mnist28_row_cache_bridge.v|
+!s90 -work|sim/work_mnist28|src/video/mnist28_row_cache_bridge.v|
+!i113 1
+R5
+R6
+vmnist28_upscale_renderer
+R1
+!i10b 1
+!s100 beeXW@^NYe?L>6<T<X82A2
+InK6[YAXM6`WL^G>>T12@f0
+R2
+R0
+w1779753516
+8src/video/mnist28_upscale_renderer.v
+Fsrc/video/mnist28_upscale_renderer.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 src/video/mnist28_upscale_renderer.v|
+!s90 -work|sim/work_mnist28|src/video/mnist28_upscale_renderer.v|
+!i113 1
+R5
+R6
+vmnist_display_buffer
+R1
+!i10b 1
+!s100 fC>GF44T3<a4Q56m`LFJC2
+Ij_0KWEVh=3V>g7UUe^3[H1
+R2
+R0
+w1780046332
+8src/video/mnist_display_buffer.v
+Fsrc/video/mnist_display_buffer.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 src/video/mnist_display_buffer.v|
+!s90 -work|sim/work_mnist28|src/video/mnist_display_buffer.v|
+!i113 1
+R5
+R6
+vtb_mnist28_upscale_renderer
+R1
+!i10b 1
+!s100 3YLAc^]P]=V4_<Zngg3Ta2
+IkW;Bz=Jo^PQHW<DjMQaJF0
+R2
+R0
+w1780198900
+8sim/tb_mnist28_upscale_renderer.v
+Fsim/tb_mnist28_upscale_renderer.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 sim/tb_mnist28_upscale_renderer.v|
+!s90 -work|sim/work_mnist28|sim/tb_mnist28_upscale_renderer.v|
+!i113 1
+R5
+R6

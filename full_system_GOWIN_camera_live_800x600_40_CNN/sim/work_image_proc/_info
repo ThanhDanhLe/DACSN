@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Codework/DACSN/FPGA_GOWIN/full_system/full_system_GOWIN_camera_live_800x600_40_CNN
+vimage_processing_vfb_stream
+Z1 !s110 1780047467
+!i10b 1
+!s100 L^da1hVAXN6o?PDZG1MTO0
+I8:Zi;^JYjVQFTYFo]_Db91
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1780046332
+8src/image_processing_vfb_stream.v
+Fsrc/image_processing_vfb_stream.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1780047467.000000
+Z5 !s107 ..\full_system_GOWIN\sim\tb_image_processing_vfb_stream_mode2.v|src/image_processing_vfb_stream.v|
+Z6 !s90 -work|sim/work_image_proc|src/image_processing_vfb_stream.v|..\full_system_GOWIN\sim\tb_image_processing_vfb_stream_mode2.v|
+!i113 1
+Z7 o-work sim/work_image_proc
+Z8 tCvgOpt 0
+vtb_image_processing_vfb_stream_mode2
+R1
+!i10b 1
+!s100 je>XU?fM<91C7O<U2537?1
+INOW8P<m5^N0oI:i?8BAmS3
+R2
+R0
+w1779522243
+8..\full_system_GOWIN\sim\tb_image_processing_vfb_stream_mode2.v
+F..\full_system_GOWIN\sim\tb_image_processing_vfb_stream_mode2.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

@@ -1,0 +1,31 @@
+{
+  "float_accuracy": 0.9811,
+  "quant_accuracy": 0.9804,
+  "accuracy_drop": 0.0006999999999999229,
+  "failure_summary": {
+    "float_correct_ptq_wrong": {
+      "total": 9,
+      "saved": 9
+    },
+    "float_wrong_ptq_correct": {
+      "total": 2,
+      "saved": 2
+    },
+    "both_wrong": {
+      "total": 187,
+      "saved": 40
+    }
+  },
+  "mistake_grid_summary": {
+    "total_mistakes_in_test": 198,
+    "rendered_images": 40,
+    "saved_grid": "out_lwdd_numpy_ptq_fast\\float_ptq_mistakes_grid_40.png",
+    "metadata": "out_lwdd_numpy_ptq_fast\\float_ptq_mistakes_metadata.json"
+  },
+  "export": {
+    "bin": "out_lwdd_numpy_ptq_fast\\fpga_export\\lwdd_params_int16_int32.bin",
+    "txt": "out_lwdd_numpy_ptq_fast\\fpga_export\\lwdd_params_int16_int32.txt",
+    "map": "out_lwdd_numpy_ptq_fast\\fpga_export\\memory_map.json",
+    "total_bytes": 9360
+  }
+}

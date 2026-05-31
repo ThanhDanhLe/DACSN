@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Codework/DACSN/FPGA_GOWIN/full_system/full_system_GOWIN_camera_live_800x600_40_CNN
+vleaf_addr_28_mul_shiftadd
+Z1 !s110 1780058520
+!i10b 1
+!s100 dIBjKz_cgM=UNT8R<1d>H0
+IaK9:F>Ezj?1NlRLRDnj[81
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1779750833
+8src\leaf_cells\leaf_addr_28_mul_shiftadd.v
+Fsrc\leaf_cells\leaf_addr_28_mul_shiftadd.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1780058520.000000
+Z5 !s107 sim\tb_mnist_roi_renderer.v|src\video\mnist28_upscale_renderer.v|src\video\mnist28_row_cache_bridge.v|src\leaf_cells\leaf_addr_28_mul_shiftadd.v|
+Z6 !s90 -work|sim\work_mnist_roi_current|+define+SIMULATION|src\leaf_cells\leaf_addr_28_mul_shiftadd.v|src\video\mnist28_row_cache_bridge.v|src\video\mnist28_upscale_renderer.v|sim\tb_mnist_roi_renderer.v|
+!i113 1
+Z7 o-work {sim\work_mnist_roi_current}
+Z8 !s92 -work {sim\work_mnist_roi_current} +define+SIMULATION
+Z9 tCvgOpt 0
+vmnist28_row_cache_bridge
+R1
+!i10b 1
+!s100 5^?FRjn2?PG5UXUjSPb212
+Ik@UdOdg<Eh4MeXGcooaRE1
+R2
+R0
+w1780047959
+8src\video\mnist28_row_cache_bridge.v
+Fsrc\video\mnist28_row_cache_bridge.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vmnist28_upscale_renderer
+R1
+!i10b 1
+!s100 beeXW@^NYe?L>6<T<X82A2
+Ij3z=iUn_hQ]B=SGC??OiI0
+R2
+R0
+w1779753516
+8src\video\mnist28_upscale_renderer.v
+Fsrc\video\mnist28_upscale_renderer.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vtb_mnist_roi_renderer
+R1
+!i10b 1
+!s100 @?[6d8`>]=I=eak=D`JkX1
+Inl[Sh;a6XK=R5cWe@nHVS3
+R2
+R0
+w1780047981
+8sim\tb_mnist_roi_renderer.v
+Fsim\tb_mnist_roi_renderer.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9

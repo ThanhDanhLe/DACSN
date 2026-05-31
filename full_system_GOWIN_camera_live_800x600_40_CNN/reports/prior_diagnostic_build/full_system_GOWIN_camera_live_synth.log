@@ -1,0 +1,76 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\GW_PLLVR.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\I2C_Interface.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\OV2640_Controller.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\OV2640_Registers.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\TMDS_PLLVR.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\camera_byte_packer.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\camera_video.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\cdc_pulse_sync.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\dvi_tx.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_mode_mux_direct.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\leaf_cells\leaf_dff_rst.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\leaf_cells\leaf_reg_bus_en_rst.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\leaf_cells\leaf_reg_bus_rst.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\mnist_image_buffer_dualclk.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\reset_sync.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\streaming_mnist_capture.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\syn_gen.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\video_frame_buffer.v'
+Analyzing Verilog file 'E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\camera_live_top.v'
+Compiling module 'camera_live_top'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\camera_live_top.v":3)
+Compiling module 'reset_sync'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\reset_sync.v":3)
+Compiling module 'cdc_pulse_sync'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\cdc_pulse_sync.v":3)
+Compiling module 'camera_byte_packer'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\camera_byte_packer.v":3)
+Compiling module 'leaf_reg_bus_en_rst(RESET_VALUE=8'd0)'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\leaf_cells\leaf_reg_bus_en_rst.v":3)
+Compiling module 'leaf_dff_rst'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\leaf_cells\leaf_dff_rst.v":3)
+Compiling module 'leaf_reg_bus_en_rst(WIDTH=16,RESET_VALUE=16'd0)'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\leaf_cells\leaf_reg_bus_en_rst.v":3)
+Compiling module 'streaming_mnist_capture'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\streaming_mnist_capture.v":16)
+Compiling module 'mnist_image_buffer_dualclk'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\mnist_image_buffer_dualclk.v":3)
+Compiling module 'camera_video'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\camera_video.v":3)
+Compiling module 'leaf_reg_bus_rst(WIDTH=41,RESET_VALUE=41'd0)'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\leaf_cells\leaf_reg_bus_rst.v":3)
+Compiling module 'OV2640_Controller'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\OV2640_Controller.v":1)
+Compiling module 'OV2640_Registers'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\OV2640_Registers.v":1)
+Compiling module 'I2C_Interface(SID=8'h60)'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\I2C_Interface.v":14)
+Compiling module 'Video_Frame_Buffer_Top'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\video_frame_buffer.v":3014)
+Compiling module '**'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\video_frame_buffer.v":3013)
+Compiling module 'GW_PLLVR'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\GW_PLLVR.v":8)
+Compiling module 'HyperRAM_Memory_Interface_Top'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v":3735)
+Compiling module '**'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v":3734)
+WARN  (EX1998) : Net '**' does not have a driver("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v":3734)
+Compiling module 'hyperram_mode_mux_direct'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_mode_mux_direct.v":17)
+Compiling module 'syn_gen'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\syn_gen.v":1)
+Compiling module 'TMDS_PLLVR'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\TMDS_PLLVR.v":9)
+Compiling module 'DVI_TX_Top'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\dvi_tx.v":1048)
+Compiling module '**'("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\dvi_tx.v":1047)
+NOTE  (EX0101) : Current top module is "camera_live_top"
+WARN  (EX0211) : The output port "rd_data[10]" of module "~hpram_wd.HyperRAM_Memory_Interface_Top_" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v":3734)
+WARN  (EX0211) : The output port "rd_data[5]" of module "~hpram_wd.HyperRAM_Memory_Interface_Top_" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v":3734)
+WARN  (EX0211) : The output port "rd_data[10]" of module "~hpram_lane.HyperRAM_Memory_Interface_Top__Z1" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v":3734)
+WARN  (EX0211) : The output port "rd_data[5]" of module "~hpram_lane.HyperRAM_Memory_Interface_Top__Z1" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v":3734)
+WARN  (EX0211) : The output port "addr_d[19]" of module "~hpram_init.HyperRAM_Memory_Interface_Top_" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\hyperram_memory_interface.v":3734)
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input FLASH_MISO is unused("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\camera_live_top.v":26)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "leaf_reg_bus_rst" instantiated to "g_hw.u_video_stream_pipe_reg" is swept in optimizing("E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\src\camera_video.v":337)
+[95%] Generate netlist file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\impl\gwsynthesis\full_system_GOWIN_camera_live.vg" completed
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_camera_video/g_hw.u_hyperram/u_hpram_top/clkdiv/CLKOUT.default_gen_clk" and "u_camera_video/g_hw.u_clkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_camera_video/g_hw.u_clkdiv/CLKOUT.default_gen_clk" and "u_camera_video/g_hw.u_hyperram/u_hpram_top/clkdiv/CLKOUT.default_gen_clk"
+[100%] Generate report file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live\mode_800x600_40_build\impl\gwsynthesis\full_system_GOWIN_camera_live_syn.rpt.html" completed
+GowinSynthesis finish

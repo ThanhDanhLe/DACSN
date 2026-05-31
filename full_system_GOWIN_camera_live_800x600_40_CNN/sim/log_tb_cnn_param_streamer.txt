@@ -1,0 +1,16 @@
+Extracted from sim/log_cnn_modelsim_full.txt on 2026-05-25 23:04:34
+Source run: vsim -c -do sim/cnn_modelsim.do
+
+# vsim -onfinish stop -lib sim/work_cnn tb_cnn_param_streamer 
+# Start time: 22:33:19 on May 25,2026
+# Loading sim/work_cnn.tb_cnn_param_streamer
+# Loading sim/work_cnn.cnn_param_streamer
+# Loading sim/work_cnn.cnn_spi_flash_reader
+# Loading sim/work_cnn.cnn_spi_flash_param_model
+# PASS tb_cnn_param_streamer
+# ** Note: $finish    : sim/tb_cnn_param_streamer.v(179)
+#    Time: 11335 ns  Iteration: 1  Instance: /tb_cnn_param_streamer
+# Break in Module tb_cnn_param_streamer at sim/tb_cnn_param_streamer.v line 179
+# Stopped at sim/tb_cnn_param_streamer.v line 179
+# End time: 22:33:19 on May 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

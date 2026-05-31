@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NSR-4C" pn="GW1NSR-LV4CQN48PC6/I5">gw1nsr4c-000</Device>
+    <FileList>
+        <File path="src/GW_PLLVR.v" type="file.verilog" enable="1"/>
+        <File path="src/I2C_Interface.v" type="file.verilog" enable="1"/>
+        <File path="src/OV2640_Controller.v" type="file.verilog" enable="1"/>
+        <File path="src/OV2640_Registers.v" type="file.verilog" enable="1"/>
+        <File path="src/TMDS_PLLVR.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_byte_packer.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_video.v" type="file.verilog" enable="1"/>
+        <File path="src/cdc_pulse_sync.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/capture_dump_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/dvi_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/hyperram_memory_interface.v" type="file.verilog" enable="1"/>
+        <File path="src/hyperram_mode_mux_direct.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_adder.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_dff_rst.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_multiplier.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_reg_bus_en_rst.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_reg_bus_load_rst.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_reg_bus_rst.v" type="file.verilog" enable="1"/>
+        <File path="src/mnist_image_buffer_dualclk.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_argmax_stream.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_bram_sdp.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_compute_mlp16_pocket.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_mac_unit.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_pocket_tanh_activation_seq_runtime.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_signed_divider_seq.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_spi_param_streamer.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_system.v" type="file.verilog" enable="1"/>
+        <File path="src/nn/nn_weight16_unpack2.v" type="file.verilog" enable="1"/>
+        <File path="src/reset_sync.v" type="file.verilog" enable="1"/>
+        <File path="src/streaming_mnist_capture.v" type="file.verilog" enable="1"/>
+        <File path="src/streaming_mnist_preload_packer.v" type="file.verilog" enable="1"/>
+        <File path="src/syn_gen.v" type="file.verilog" enable="1"/>
+        <File path="src/video_frame_buffer.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_live_top.v" type="file.verilog" enable="1"/>
+        <File path="src/full_system_top.cst" type="file.cst" enable="1"/>
+        <File path="src/full_system_top.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

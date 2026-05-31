@@ -1,0 +1,17 @@
+Extracted from sim/log_cnn_modelsim_full.txt on 2026-05-25 23:04:34
+Source run: vsim -c -do sim/cnn_modelsim.do
+
+# vsim -onfinish stop -lib sim/work_cnn tb_cnn_compute_lwdd 
+# Start time: 22:33:19 on May 25,2026
+# Loading sim/work_cnn.tb_cnn_compute_lwdd
+# Loading sim/work_cnn.cnn_compute_lwdd
+# Loading sim/work_cnn.cnn_feature_buffer
+# Loading sim/work_cnn.cnn_word_cache_buffer
+# Loading sim/work_cnn.leaf_multiplier
+# PASS tb_cnn_compute_lwdd
+# ** Note: $finish    : sim/tb_cnn_compute_lwdd.v(260)
+#    Time: 679620755 ns  Iteration: 1  Instance: /tb_cnn_compute_lwdd
+# Break in Module tb_cnn_compute_lwdd at sim/tb_cnn_compute_lwdd.v line 260
+# Stopped at sim/tb_cnn_compute_lwdd.v line 260
+# End time: 22:37:08 on May 25,2026, Elapsed time: 0:03:49
+# Errors: 0, Warnings: 0

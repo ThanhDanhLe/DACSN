@@ -1,0 +1,21 @@
+Extracted from sim/log_cnn_modelsim_full.txt on 2026-05-25 23:04:34
+Source run: vsim -c -do sim/cnn_modelsim.do
+
+# vsim -onfinish stop -lib sim/work_cnn tb_cnn_system 
+# Start time: 22:37:08 on May 25,2026
+# Loading sim/work_cnn.tb_cnn_system
+# Loading sim/work_cnn.cnn_system
+# Loading sim/work_cnn.cnn_param_streamer
+# Loading sim/work_cnn.cnn_spi_flash_reader
+# Loading sim/work_cnn.cnn_compute_lwdd
+# Loading sim/work_cnn.cnn_feature_buffer
+# Loading sim/work_cnn.cnn_word_cache_buffer
+# Loading sim/work_cnn.leaf_multiplier
+# Loading sim/work_cnn.cnn_spi_flash_param_model
+# PASS tb_cnn_system
+# ** Note: $finish    : sim/tb_cnn_system.v(196)
+#    Time: 685410215 ns  Iteration: 1  Instance: /tb_cnn_system
+# Break in Module tb_cnn_system at sim/tb_cnn_system.v line 196
+# Stopped at sim/tb_cnn_system.v line 196
+# End time: 22:42:30 on May 25,2026, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 0

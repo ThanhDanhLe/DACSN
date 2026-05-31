@@ -1,0 +1,116 @@
+{
+  "format": "LWDD_NUMPY_PTQ_V1",
+  "endian": "little",
+  "weight_dtype": "int16",
+  "bias_dtype": "int32",
+  "tensors": [
+    {
+      "name": "conv1.filters",
+      "offset": 0,
+      "bytes": 72,
+      "shape": [
+        3,
+        3,
+        1,
+        4
+      ],
+      "dtype": "int16",
+      "scale": 2.794627809770471e-05,
+      "alignment": 4
+    },
+    {
+      "name": "conv2.filters",
+      "offset": 72,
+      "bytes": 288,
+      "shape": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "dtype": "int16",
+      "scale": 1.9332871218932887e-05,
+      "alignment": 4
+    },
+    {
+      "name": "conv3.filters",
+      "offset": 360,
+      "bytes": 576,
+      "shape": [
+        3,
+        3,
+        4,
+        8
+      ],
+      "dtype": "int16",
+      "scale": 1.9820186075854425e-05,
+      "alignment": 4
+    },
+    {
+      "name": "conv4.filters",
+      "offset": 936,
+      "bytes": 1152,
+      "shape": [
+        3,
+        3,
+        8,
+        8
+      ],
+      "dtype": "int16",
+      "scale": 2.1108615590134316e-05,
+      "alignment": 4
+    },
+    {
+      "name": "conv5.filters",
+      "offset": 2088,
+      "bytes": 2304,
+      "shape": [
+        3,
+        3,
+        8,
+        16
+      ],
+      "dtype": "int16",
+      "scale": 1.9927222316824717e-05,
+      "alignment": 4
+    },
+    {
+      "name": "conv6.filters",
+      "offset": 4392,
+      "bytes": 4608,
+      "shape": [
+        3,
+        3,
+        16,
+        16
+      ],
+      "dtype": "int16",
+      "scale": 1.607812691183076e-05,
+      "alignment": 4
+    },
+    {
+      "name": "classifier.weights",
+      "offset": 9000,
+      "bytes": 320,
+      "shape": [
+        16,
+        10
+      ],
+      "dtype": "int16",
+      "scale": 2.7594634886827292e-05,
+      "alignment": 4
+    },
+    {
+      "name": "classifier.bias",
+      "offset": 9320,
+      "bytes": 40,
+      "shape": [
+        10
+      ],
+      "dtype": "int32",
+      "scale": 7.505967378915991e-11,
+      "alignment": 4
+    }
+  ],
+  "total_bytes": 9360
+}

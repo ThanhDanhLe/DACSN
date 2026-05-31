@@ -1,0 +1,17 @@
+binary_size_bytes=9360
+total_words=2340
+conv1.filters: offset=0 bytes=72 word_offset=0 len_words=18 shape=[3, 3, 1, 4] dtype=int16 scale=2.7946278097704709e-05 nearest_pow2_shift=15
+conv2.filters: offset=72 bytes=288 word_offset=18 len_words=72 shape=[3, 3, 4, 4] dtype=int16 scale=1.9332871218932887e-05 nearest_pow2_shift=16
+conv3.filters: offset=360 bytes=576 word_offset=90 len_words=144 shape=[3, 3, 4, 8] dtype=int16 scale=1.9820186075854425e-05 nearest_pow2_shift=16
+conv4.filters: offset=936 bytes=1152 word_offset=234 len_words=288 shape=[3, 3, 8, 8] dtype=int16 scale=2.1108615590134316e-05 nearest_pow2_shift=16
+conv5.filters: offset=2088 bytes=2304 word_offset=522 len_words=576 shape=[3, 3, 8, 16] dtype=int16 scale=1.9927222316824717e-05 nearest_pow2_shift=16
+conv6.filters: offset=4392 bytes=4608 word_offset=1098 len_words=1152 shape=[3, 3, 16, 16] dtype=int16 scale=1.607812691183076e-05 nearest_pow2_shift=16
+classifier.weights: offset=9000 bytes=320 word_offset=2250 len_words=80 shape=[16, 10] dtype=int16 scale=2.7594634886827292e-05 nearest_pow2_shift=15
+classifier.bias: offset=9320 bytes=40 word_offset=2330 len_words=10 shape=[10] dtype=int32 scale=7.5059673789159911e-11 nearest_pow2_shift=34
+
+fixed_point=input_u8_as_int16 conv_acc=int64 relu shift saturate_u15 conv_shifts={'conv1.filters': 15, 'conv2.filters': 16, 'conv3.filters': 16, 'conv4.filters': 16, 'conv5.filters': 16, 'conv6.filters': 16} dense_bias_shift=11
+
+sample=0 class=7 logits=-13674788 -1745251 5175836 -3418082 -7552458 -16583646 -34340862 23310850 -13456754 1930627
+sample=0 conv1_max=797 conv2_max=715 pool1_max=715 conv3_max=1161 conv4_max=861 pool2_max=861 conv5_max=862 conv6_max=825 global_max_max=825
+sample=1 class=7 logits=-9419016 -1299005 5375282 4249604 -13759287 -24473545 -38864697 20247253 -7023607 7076097
+sample=1 conv1_max=765 conv2_max=733 pool1_max=733 conv3_max=1150 conv4_max=875 pool2_max=875 conv5_max=971 conv6_max=1004 global_max_max=1004

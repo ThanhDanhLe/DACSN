@@ -1,0 +1,14 @@
+dump=E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40\final\out\test_capture_dump.csv
+params=E:\Codework\DACSN\FPGA_GOWIN\full_system\final\out\direct_stream_params.bin
+pixel_sum=7140
+nonzero_count=28
+bbox_min_x=0
+bbox_max_x=27
+bbox_min_y=0
+bbox_max_y=27
+min_pixel=0
+max_pixel=255
+logits=0,0,0,4,12,10,-2,0,0,-8
+predicted_class=4
+png=full_system_GOWIN_camera_live_800x600_40\final\out\test_predict\test_capture_dump_28x28.png
+matrix_csv=full_system_GOWIN_camera_live_800x600_40\final\out\test_predict\test_capture_dump_matrix.csv

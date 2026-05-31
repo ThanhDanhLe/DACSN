@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Codework/DACSN/FPGA_GOWIN/full_system/full_system_GOWIN_camera_live_800x600_40_CNN
+vmnist_roi_renderer
+Z1 !s110 1780058790
+!i10b 1
+!s100 @D>I5ooMEI]i5QoYCD83U1
+I<MQjI0[>8C6FZY4]ad4mo2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1780058664
+8src\video\mnist_roi_renderer.v
+Fsrc\video\mnist_roi_renderer.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1780058790.000000
+Z5 !s107 sim\tb_mnist_roi_renderer.v|src\video\mnist_roi_renderer.v|
+Z6 !s90 -work|sim\work_mnist_roi_fix|+define+SIMULATION|src\video\mnist_roi_renderer.v|sim\tb_mnist_roi_renderer.v|
+!i113 1
+Z7 o-work {sim\work_mnist_roi_fix}
+Z8 !s92 -work {sim\work_mnist_roi_fix} +define+SIMULATION
+Z9 tCvgOpt 0
+vtb_mnist_roi_renderer
+R1
+!i10b 1
+!s100 >2To:AHHWYa2<6l[n`5KC1
+IJ;0TH=mXAQQCh6z`edd]Z2
+R2
+R0
+w1780058755
+8sim\tb_mnist_roi_renderer.v
+Fsim\tb_mnist_roi_renderer.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9

@@ -1,0 +1,3 @@
+open_project full_system_GOWIN_camera_live_800x600_40_CNN.gprj
+run all
+exit

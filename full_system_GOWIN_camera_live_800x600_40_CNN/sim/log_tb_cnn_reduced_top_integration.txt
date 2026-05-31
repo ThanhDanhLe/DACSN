@@ -1,0 +1,22 @@
+Extracted from sim/log_cnn_modelsim_full.txt on 2026-05-25 23:04:34
+Source run: vsim -c -do sim/cnn_modelsim.do
+
+# vsim -onfinish stop -lib sim/work_cnn tb_cnn_reduced_top_integration 
+# Start time: 22:42:30 on May 25,2026
+# Loading sim/work_cnn.tb_cnn_reduced_top_integration
+# Loading sim/work_cnn.streaming_mnist_preload_packer
+# Loading sim/work_cnn.cnn_system
+# Loading sim/work_cnn.cnn_param_streamer
+# Loading sim/work_cnn.cnn_spi_flash_reader
+# Loading sim/work_cnn.cnn_compute_lwdd
+# Loading sim/work_cnn.cnn_feature_buffer
+# Loading sim/work_cnn.cnn_word_cache_buffer
+# Loading sim/work_cnn.leaf_multiplier
+# Loading sim/work_cnn.cnn_spi_flash_param_model
+# PASS tb_cnn_reduced_top_integration
+# ** Note: $finish    : sim/tb_cnn_reduced_top_integration.v(210)
+#    Time: 342715735 ns  Iteration: 1  Instance: /tb_cnn_reduced_top_integration
+# Break in Module tb_cnn_reduced_top_integration at sim/tb_cnn_reduced_top_integration.v line 210
+# Stopped at sim/tb_cnn_reduced_top_integration.v line 210
+# End time: 22:45:19 on May 25,2026, Elapsed time: 0:02:49
+# Errors: 0, Warnings: 0

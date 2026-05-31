@@ -1,0 +1,26 @@
+# Gowin generated files
+**/impl/temp/
+**/impl/gwsynthesis/
+**/work/
+**/sim/work/
+**/transcript
+**/*.wlf
+**/*.vcd
+**/*.fst
+
+# Large generated FPGA outputs
+**/impl/pnr/*.fs
+**/impl/pnr/*.bin
+**/impl/pnr/*.bit
+**/impl/pnr/*.db
+
+# Python cache/env
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/venv/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/.ropeproject/

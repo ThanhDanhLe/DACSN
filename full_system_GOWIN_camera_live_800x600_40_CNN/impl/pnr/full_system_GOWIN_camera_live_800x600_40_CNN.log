@@ -1,0 +1,34 @@
+Reading netlist file: "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\impl\gwsynthesis\full_system_GOWIN_camera_live_800x600_40_CNN.vg"
+Parsing netlist file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\impl\gwsynthesis\full_system_GOWIN_camera_live_800x600_40_CNN.vg" completed
+Processing netlist completed
+Reading constraint file: "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\src\full_system_top.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1132) :  'u_camera_video/g_hw.u_hyperram/u_hpram_top/clkdiv/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
+WARN  (TA1117) : Can't calculate clocks' relationship between: "u_camera_video/g_hw.u_hyperram/u_hpram_top/clkdiv/CLKOUT.default_gen_clk" and "PIXCLK"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "PIXCLK" and "u_camera_video/g_hw.u_hyperram/u_hpram_top/clkdiv/CLKOUT.default_gen_clk"
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'I_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\impl\pnr\full_system_GOWIN_camera_live_800x600_40_CNN.power.html" completed
+Generate file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\impl\pnr\full_system_GOWIN_camera_live_800x600_40_CNN.pin.html" completed
+Generate file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\impl\pnr\full_system_GOWIN_camera_live_800x600_40_CNN.rpt.html" completed
+Generate file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\impl\pnr\full_system_GOWIN_camera_live_800x600_40_CNN.rpt.txt" completed
+Generate file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\impl\pnr\full_system_GOWIN_camera_live_800x600_40_CNN.tr.html" completed
+Generate file "E:\Codework\DACSN\FPGA_GOWIN\full_system\full_system_GOWIN_camera_live_800x600_40_CNN\impl\pnr\full_system_GOWIN_camera_live_800x600_40_CNN.tr" completed
+Sun May 31 18:55:02 2026
+
