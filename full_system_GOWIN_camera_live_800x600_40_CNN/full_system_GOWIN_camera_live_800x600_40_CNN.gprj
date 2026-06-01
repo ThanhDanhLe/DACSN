@@ -15,6 +15,7 @@
         <File path="src/button_debounce.v" type="file.verilog" enable="1"/>
         <File path="src/camera_live_flow_control.v" type="file.verilog" enable="1"/>
         <File path="src/cdc_pulse_sync.v" type="file.verilog" enable="1"/>
+        <File path="src/cdc/cdc_result_class_latch.v" type="file.verilog" enable="1"/>
         <File path="src/uart_tx.v" type="file.verilog" enable="0"/>
         <File path="src/capture_dump_controller.v" type="file.verilog" enable="0"/>
         <File path="src/dvi_tx.v" type="file.verilog" enable="1"/>
@@ -32,6 +33,10 @@
         <File path="src/leaf_cells/leaf_scalar_c5.v" type="file.verilog" enable="1"/>
         <File path="src/leaf_cells/leaf_scalar_c1.v" type="file.verilog" enable="1"/>
         <File path="src/leaf_cells/leaf_scalar_c2.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_scalar_dense.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_rgb565_green_to_gray.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_mnist_threshold_invert.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_mnist_addr_28x28.v" type="file.verilog" enable="1"/>
         <File path="src/leaf_cells/leaf_dff_rst.v" type="file.verilog" enable="1"/>
         <File path="src/leaf_cells/leaf_input_u8_to_i16.v" type="file.verilog" enable="1"/>
         <File path="src/leaf_cells/leaf_multiplier.v" type="file.verilog" enable="1"/>
@@ -56,6 +61,9 @@
         <File path="src/streaming_mnist_preload_packer.v" type="file.verilog" enable="1"/>
         <File path="src/syn_gen.v" type="file.verilog" enable="1"/>
         <File path="src/video/mnist_display_buffer.v" type="file.verilog" enable="0"/>
+        <File path="src/video/digit_to_7seg.v" type="file.verilog" enable="1"/>
+        <File path="src/video/sevenseg_digit_overlay.v" type="file.verilog" enable="1"/>
+        <File path="src/video/result_overlay_mux.v" type="file.verilog" enable="1"/>
         <File path="src/video/mnist28_row_cache_bridge.v" type="file.verilog" enable="1"/>
         <File path="src/video/mnist28_upscale_renderer.v" type="file.verilog" enable="1"/>
         <File path="src/video/mnist_roi_renderer.v" type="file.verilog" enable="0"/>

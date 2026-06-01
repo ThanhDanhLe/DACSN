@@ -295,6 +295,7 @@ wire [8:0] leaf_c5_cache_word_out;
 wire [10:0] leaf_scalar_c5_out;
 wire [10:0] leaf_scalar_c1_out;
 wire [10:0] leaf_scalar_c2_out;
+wire [10:0] leaf_scalar_dense_out;
 wire signed [6:0] b1_c1_src_y_s = $signed({1'b0, sub_y}) + $signed({4'd0, sub_ky}) - 7'sd1;
 wire signed [6:0] b1_c1_src_x_s = $signed({1'b0, sub_x}) + $signed({4'd0, sub_kx}) - 7'sd1;
 wire signed [6:0] b2_c3_src_y_s = $signed({1'b0, sub_y}) + $signed({4'd0, sub_ky}) - 7'sd1;
@@ -386,6 +387,12 @@ leaf_scalar_c2 u_leaf_scalar_c2 (
     .scalar(leaf_scalar_c2_out)
 );
 
+leaf_scalar_dense u_leaf_scalar_dense (
+    .in_idx(dense_in_idx),
+    .out_idx(dense_out_idx),
+    .scalar(leaf_scalar_dense_out)
+);
+
 leaf_select_i16 u_leaf_select_cache_i16 (
     .word(cache_rd_data),
     .half_sel(cache_half_sel),
@@ -457,14 +464,6 @@ function [10:0] scalar_c4;
     begin
         kk = {1'b0, f_ky} + {f_ky, 1'b0} + {2'b00, f_kx};
         scalar_c4 = {1'b0, kk, 6'b000000} + {3'd0, f_cin, 3'b000} + {6'd0, f_cout};
-    end
-endfunction
-
-function [10:0] scalar_dense;
-    input [4:0] in_idx;
-    input [3:0] out_idx;
-    begin
-        scalar_dense = {in_idx, 3'b000} + {in_idx, 1'b0} + out_idx;
     end
 endfunction
 
@@ -1237,7 +1236,7 @@ always @(posedge clk or negedge rst_n) begin
             end
 
             S_DENSE_MAC: begin
-                scalar = scalar_dense(dense_in_idx, dense_out_idx);
+                scalar = leaf_scalar_dense_out;
                 cache_rd_en <= 1'b1;
                 cache_rd_addr <= scalar[9:1];
                 cache_half_sel <= scalar[0];

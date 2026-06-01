@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Codework/DACSN/FPGA_GOWIN/full_system/full_system_GOWIN_camera_live_800x600_40_CNN
+vimage_processing_vfb_stream
+Z1 !s110 1780246621
+!i10b 1
+!s100 L^da1hVAXN6o?PDZG1MTO0
+IiN8B3h3bPzhFSH;U7U88L1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1780046332
+8src\image_processing_vfb_stream.v
+Fsrc\image_processing_vfb_stream.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1780246621.000000
+Z5 !s107 sim\tb_streaming_mnist_capture_equivalence.v|src\streaming_mnist_capture.v|src\image_processing_vfb_stream.v|src\leaf_cells\leaf_mnist_addr_28x28.v|src\leaf_cells\leaf_mnist_threshold_invert.v|src\leaf_cells\leaf_rgb565_green_to_gray.v|
+Z6 !s90 -quiet|-work|sim\work_streaming_equiv_relaxed_wrappers|src\leaf_cells\leaf_rgb565_green_to_gray.v|src\leaf_cells\leaf_mnist_threshold_invert.v|src\leaf_cells\leaf_mnist_addr_28x28.v|src\image_processing_vfb_stream.v|src\streaming_mnist_capture.v|sim\tb_streaming_mnist_capture_equivalence.v|
+!i113 1
+Z7 o-quiet -work {sim\work_streaming_equiv_relaxed_wrappers}
+Z8 tCvgOpt 0
+vleaf_mnist_addr_28x28
+R1
+!i10b 1
+!s100 _BQWg4G65IZ;QE2gCE;KZ3
+IVfoFnelUD4H_odC^dV^@n1
+R2
+R0
+Z9 w1780246584
+8src\leaf_cells\leaf_mnist_addr_28x28.v
+Fsrc\leaf_cells\leaf_mnist_addr_28x28.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vleaf_mnist_threshold_invert
+R1
+!i10b 1
+!s100 FK<Gk[mCcX7i4nhio3>n63
+ICaPD43jU]Qchjzi8mIGYo0
+R2
+R0
+R9
+8src\leaf_cells\leaf_mnist_threshold_invert.v
+Fsrc\leaf_cells\leaf_mnist_threshold_invert.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vleaf_rgb565_green_to_gray
+R1
+!i10b 1
+!s100 `]AiZT4gOYQS=Ga8><heH0
+IZ24HB]h0N=T>=W9VS9zc21
+R2
+R0
+R9
+8src\leaf_cells\leaf_rgb565_green_to_gray.v
+Fsrc\leaf_cells\leaf_rgb565_green_to_gray.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vstreaming_mnist_capture
+R1
+!i10b 1
+!s100 TdA]fZ]2emBEgTVBB><G91
+I5O;5kNG2]7;ilmPNam0kG1
+R2
+R0
+R9
+8src\streaming_mnist_capture.v
+Fsrc\streaming_mnist_capture.v
+L0 16
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vtb_streaming_mnist_capture_equivalence
+R1
+!i10b 1
+!s100 :[AL4:Yd2iYg5BZkKLh9g1
+IVoMj_Xn<6cm@H2Vc]Yg6e0
+R2
+R0
+w1779587545
+8sim\tb_streaming_mnist_capture_equivalence.v
+Fsim\tb_streaming_mnist_capture_equivalence.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

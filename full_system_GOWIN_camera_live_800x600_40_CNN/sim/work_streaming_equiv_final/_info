@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Codework/DACSN/FPGA_GOWIN/full_system/full_system_GOWIN_camera_live_800x600_40_CNN
+vimage_processing_vfb_stream
+Z1 !s110 1780241872
+!i10b 1
+!s100 L^da1hVAXN6o?PDZG1MTO0
+IWh?c@6B^P<_Yz``6<6L2V1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1780046332
+8src\image_processing_vfb_stream.v
+Fsrc\image_processing_vfb_stream.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1780241872.000000
+Z5 !s107 sim\tb_streaming_mnist_capture_equivalence.v|src\streaming_mnist_capture.v|src\image_processing_vfb_stream.v|
+Z6 !s90 -quiet|-work|sim\work_streaming_equiv_final|src\image_processing_vfb_stream.v|src\streaming_mnist_capture.v|sim\tb_streaming_mnist_capture_equivalence.v|
+!i113 1
+Z7 o-quiet -work {sim\work_streaming_equiv_final}
+Z8 tCvgOpt 0
+vstreaming_mnist_capture
+R1
+!i10b 1
+!s100 j7DXm^^8z`8SMPBAINe;V3
+I_UJ`^Jl]dQNTcU]BBQ@4?3
+R2
+R0
+w1780200213
+8src\streaming_mnist_capture.v
+Fsrc\streaming_mnist_capture.v
+L0 16
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vtb_streaming_mnist_capture_equivalence
+R1
+!i10b 1
+!s100 :[AL4:Yd2iYg5BZkKLh9g1
+IBFLY:?ibTCEnZ_]gOnVW_1
+R2
+R0
+w1779587545
+8sim\tb_streaming_mnist_capture_equivalence.v
+Fsim\tb_streaming_mnist_capture_equivalence.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

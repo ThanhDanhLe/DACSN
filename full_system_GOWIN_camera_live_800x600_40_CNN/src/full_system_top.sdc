@@ -51,14 +51,12 @@ set_false_path -to [get_pins {u_camera_video/g_hw.u_hyperram_mode_mux/owner_meta
 set_false_path -to [get_pins {vfb_halt_sync_i_0_s0/D}]
 set_false_path -to [get_pins {owner_none_sync_i_0_s0/D}]
 
-# Targeted display-result CDC exceptions:
-# NN result/status are produced in I_clk and feed only first-stage
-# two-flop synchronizers inside camera_video's pix_clk HDMI overlay.
-# The second sync stage and HDMI datapath remain timed normally.
-set_false_path -to [get_pins {u_camera_video/g_hw.result_valid_pix0_s0/D}]
+# Targeted display-result CDC exceptions.
+# result_valid/result_class enter cdc_result_class_latch through first-stage
+# pix_clk synchronizers and an event-held class bus. The class bus is held
+# stable in I_clk while result_valid is asserted; later pix stages remain timed.
+set_false_path -to [get_pins {u_camera_video/g_hw.u_cdc_result_class_latch/dst_valid_sync_0_s0/D}]
+set_false_path -to [get_pins {u_camera_video/g_hw.u_cdc_result_class_latch/dst_event_sync_0_s0/D}]
+set_false_path -from [get_pins {u_camera_video/g_hw.u_cdc_result_class_latch/src_class_hold_*_s0/Q}] -to [get_pins {u_camera_video/g_hw.u_cdc_result_class_latch/displayed_class_pix_*_s0/D}]
 set_false_path -to [get_pins {u_camera_video/g_hw.result_busy_pix0_s0/D}]
 set_false_path -to [get_pins {u_camera_video/g_hw.result_error_pix0_s0/D}]
-set_false_path -to [get_pins {u_camera_video/g_hw.result_class_pix0_0_s0/D}]
-set_false_path -to [get_pins {u_camera_video/g_hw.result_class_pix0_1_s0/D}]
-set_false_path -to [get_pins {u_camera_video/g_hw.result_class_pix0_2_s0/D}]
-set_false_path -to [get_pins {u_camera_video/g_hw.result_class_pix0_3_s0/D}]

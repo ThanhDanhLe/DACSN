@@ -484,27 +484,58 @@ end else begin : g_hw
                       ((x_cnt == ROI_X0_12) || (x_cnt == (ROI_X1_12 - 12'd1)) ||
                        (y_cnt == ROI_Y0_12) || (y_cnt == (ROI_Y1_12 - 12'd1)));
 
-    reg result_valid_pix0;
-    reg result_valid_pix1;
     reg result_busy_pix0;
     reg result_busy_pix1;
     reg result_error_pix0;
     reg result_error_pix1;
-    reg [3:0] result_class_pix0;
-    reg [3:0] result_class_pix1;
+    wire [3:0] displayed_class_pix;
+    wire       displayed_class_valid_pix;
+    wire [6:0] result_seg_pix;
+    wire       result_overlay_on;
+    wire       result_overlay_active;
 
-    wire [15:0] result_class_rgb565 = {
-        result_class_pix1[2:0], 2'b11,
-        result_class_pix1[3:0], 2'b11,
-        result_class_pix1[1:0], result_class_pix1[3], 2'b11
-    };
     wire [15:0] result_border_rgb565 =
         result_error_pix1 ? 16'hF800 :
         result_busy_pix1  ? 16'hFFE0 :
-        result_valid_pix1 ? result_class_rgb565 :
-                            ROI_BORDER_COLOR;
+        displayed_class_valid_pix ? 16'h07E0 :
+                                    ROI_BORDER_COLOR;
     wire [15:0] live_rgb565 = roi_border ? result_border_rgb565 : off0_syn_data;
-    wire [15:0] hdmi_rgb565 = show_processed ? processed_rgb565 : live_rgb565;
+    wire [15:0] hdmi_base_rgb565 = show_processed ? processed_rgb565 : live_rgb565;
+    wire [15:0] hdmi_rgb565 = result_overlay_on ? 16'h07E0 : hdmi_base_rgb565;
+    assign result_overlay_active = rgb_de && displayed_class_valid_pix &&
+                                   !show_processed && !result_error_pix1;
+
+    cdc_result_class_latch u_cdc_result_class_latch (
+        .src_clk(I_clk),
+        .src_rst_n(I_rst_n),
+        .src_valid(result_valid),
+        .src_class(result_class),
+        .dst_clk(pix_clk_int),
+        .dst_rst_n(hdmi_rst_n),
+        .displayed_class_pix(displayed_class_pix),
+        .displayed_class_valid_pix(displayed_class_valid_pix)
+    );
+
+    digit_to_7seg u_digit_to_7seg (
+        .digit(displayed_class_pix),
+        .seg(result_seg_pix)
+    );
+
+    sevenseg_digit_overlay #(
+        .X0(0),
+        .Y0(0),
+        .W(64),
+        .H(128),
+        .T(8),
+        .FAST_POWER2(1)
+    ) u_sevenseg_digit_overlay (
+        .active(result_overlay_active),
+        .x(x_cnt[10:0]),
+        .y(y_cnt[10:0]),
+        .seg(result_seg_pix),
+        .overlay_on(result_overlay_on),
+        .overlay_rgb()
+    );
 
     always @(posedge pix_clk_int or negedge hdmi_rst_n) begin
         if (!hdmi_rst_n) begin
@@ -520,23 +551,15 @@ end else begin : g_hw
             rgb_hs_tx <= 1'b0;
             rgb_vs_tx <= 1'b0;
             rgb_data_tx <= 24'd0;
-            result_valid_pix0 <= 1'b0;
-            result_valid_pix1 <= 1'b0;
             result_busy_pix0 <= 1'b0;
             result_busy_pix1 <= 1'b0;
             result_error_pix0 <= 1'b0;
             result_error_pix1 <= 1'b0;
-            result_class_pix0 <= 4'hF;
-            result_class_pix1 <= 4'hF;
         end else begin
-            result_valid_pix0 <= result_valid;
-            result_valid_pix1 <= result_valid_pix0;
             result_busy_pix0 <= result_busy;
             result_busy_pix1 <= result_busy_pix0;
             result_error_pix0 <= result_error;
             result_error_pix1 <= result_error_pix0;
-            result_class_pix0 <= result_class;
-            result_class_pix1 <= result_class_pix0;
 
             hs_dn <= {hs_dn[0], syn_off0_hs};
             vs_dn <= {vs_dn[0], syn_off0_vs};

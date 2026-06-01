@@ -87,26 +87,38 @@ wire roi_row_end = (state == S_RUN) && href && pixel_valid &&
                    (x_count == ROI_X1_12) &&
                    (y_count >= ROI_Y0_12) && (y_count < ROI_Y1_12);
 
-wire [5:0] pixel_g6 = rgb565[10:5];
-wire [7:0] pixel_gray = {pixel_g6, pixel_g6[5:4]};
+wire [7:0] pixel_gray;
 wire [4:0] pixel_gray5 = pixel_gray[7:3];
 wire [8:0] block_sum_with_pixel = block_sum + {4'd0, pixel_gray5};
 wire [12:0] update_sum_next = col_sum[update_col_s1] + {4'd0, update_add_s1};
 
-wire [9:0] wr_row_mul32 = {wr_row, 5'b00000};
-wire [9:0] wr_row_mul4  = {3'b000, wr_row, 2'b00};
-wire [9:0] wr_row_base = wr_row_mul32 - wr_row_mul4;
-
 wire [7:0] avg_gray_raw = col_sum[wr_col][12:5];
 wire [7:0] avg_gray = (avg_gray_raw == 8'd248) ? 8'd255 : avg_gray_raw;
-wire [7:0] mnist_inverted = 8'd255 - avg_gray;
-wire [7:0] mnist_u8 = (avg_gray < THRESHOLD) ? mnist_inverted : 8'd0;
+wire [7:0] mnist_u8;
+wire [9:0] mnist_wr_addr_next;
+
+leaf_rgb565_green_to_gray u_leaf_rgb565_green_to_gray (
+    .rgb565(rgb565),
+    .gray(pixel_gray)
+);
+
+leaf_mnist_threshold_invert u_leaf_mnist_threshold_invert (
+    .gray(avg_gray),
+    .threshold(THRESHOLD),
+    .mnist_pixel(mnist_u8)
+);
+
+leaf_mnist_addr_28x28 u_leaf_mnist_addr_28x28 (
+    .y(wr_row),
+    .x(wr_col),
+    .addr(mnist_wr_addr_next)
+);
 
 // These diagnostic outputs are left in the interface for bench compatibility.
 // The production design does not consume them, so avoid carrying two wide
 // redundant counters in the saturated device.
 assign roi_pixel_count = 19'd0;
-assign mnist_write_count = wr_row_base + {5'b00000, wr_col};
+assign mnist_write_count = mnist_wr_addr_next;
 
 task start_capture;
     begin
@@ -270,7 +282,7 @@ always @(posedge clk or negedge rst_n) begin
                     fail_capture();
                 end else begin
                     mnist_wr_en <= 1'b1;
-                    mnist_wr_addr <= wr_row_base + {5'b00000, wr_col};
+                    mnist_wr_addr <= mnist_wr_addr_next;
                     mnist_wr_data <= {8'd0, mnist_u8};
                     col_sum[wr_col] <= 13'd0;
                     if (wr_col == (MNIST_SIZE - 1)) begin

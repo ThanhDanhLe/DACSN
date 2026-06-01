@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NSR-4C" pn="GW1NSR-LV4CQN48PC6/I5">gw1nsr4c-000</Device>
+    <FileList>
+        <File path="src/GW_PLLVR.v" type="file.verilog" enable="1"/>
+        <File path="src/I2C_Interface.v" type="file.verilog" enable="1"/>
+        <File path="src/OV2640_Controller.v" type="file.verilog" enable="1"/>
+        <File path="src/OV2640_Registers.v" type="file.verilog" enable="1"/>
+        <File path="src/TMDS_PLLVR.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_byte_packer.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_video.v" type="file.verilog" enable="1"/>
+        <File path="src/button_debounce.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_live_flow_control.v" type="file.verilog" enable="1"/>
+        <File path="src/cdc_pulse_sync.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_tx.v" type="file.verilog" enable="0"/>
+        <File path="src/capture_dump_controller.v" type="file.verilog" enable="0"/>
+        <File path="src/dvi_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/hyperram_memory_interface.v" type="file.verilog" enable="1"/>
+        <File path="src/hyperram_mode_mux_direct.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_adder.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_addr_28_mul_shiftadd.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_addr_img28.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_addr_14c4.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_addr_7c8.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_addr_7c16.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_c5_word_offset.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_conv6_word_offset.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_c5_cache_word.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_scalar_c5.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_scalar_c1.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_scalar_c2.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_dff_rst.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_input_u8_to_i16.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_multiplier.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_relu_shift_sat.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_reg_bus_en_rst.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_reg_bus_load_rst.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_reg_bus_rst.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_select_i16.v" type="file.verilog" enable="1"/>
+        <File path="src/leaf_cells/leaf_sevenseg_decode.v" type="file.verilog" enable="0"/>
+        <File path="src/leaf_cells/leaf_sext32_to_acc.v" type="file.verilog" enable="1"/>
+        <File path="src/mnist_image_buffer_dualclk.v" type="file.verilog" enable="1"/>
+        <File path="src/image_processing_vfb_stream.v" type="file.verilog" enable="1"/>
+        <File path="src/cnn/cnn_argmax.v" type="file.verilog" enable="1"/>
+        <File path="src/cnn/cnn_feature_buffer.v" type="file.verilog" enable="1"/>
+        <File path="src/cnn/cnn_word_cache_buffer.v" type="file.verilog" enable="1"/>
+        <File path="src/cnn/cnn_spi_flash_reader.v" type="file.verilog" enable="1"/>
+        <File path="src/cnn/cnn_param_streamer.v" type="file.verilog" enable="1"/>
+        <File path="src/cnn/cnn_compute_lwdd.v" type="file.verilog" enable="1"/>
+        <File path="src/cnn/cnn_system.v" type="file.verilog" enable="1"/>
+        <File path="src/reset_sync.v" type="file.verilog" enable="1"/>
+        <File path="src/streaming_mnist_capture.v" type="file.verilog" enable="1"/>
+        <File path="src/streaming_mnist_preload_packer.v" type="file.verilog" enable="1"/>
+        <File path="src/syn_gen.v" type="file.verilog" enable="1"/>
+        <File path="src/video/mnist_display_buffer.v" type="file.verilog" enable="0"/>
+        <File path="src/video/mnist28_row_cache_bridge.v" type="file.verilog" enable="1"/>
+        <File path="src/video/mnist28_upscale_renderer.v" type="file.verilog" enable="1"/>
+        <File path="src/video/mnist_roi_renderer.v" type="file.verilog" enable="0"/>
+        <File path="src/video_frame_buffer.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_live_top.v" type="file.verilog" enable="1"/>
+        <File path="sim/cnn_spi_flash_param_model.v" type="file.verilog" enable="0"/>
+        <File path="sim/tb_mnist28_upscale_renderer.v" type="file.verilog" enable="0"/>
+        <File path="sim/tb_leaf_cnn_helpers.v" type="file.verilog" enable="0"/>
+        <File path="sim/tb_leaf_cnn_index_helpers.v" type="file.verilog" enable="0"/>
+        <File path="sim/tb_camera_live_state_flow.v" type="file.verilog" enable="0"/>
+        <File path="sim/tb_cnn_param_streamer.v" type="file.verilog" enable="0"/>
+        <File path="sim/tb_cnn_compute_lwdd.v" type="file.verilog" enable="0"/>
+        <File path="sim/tb_cnn_system.v" type="file.verilog" enable="0"/>
+        <File path="sim/tb_cnn_reduced_top_integration.v" type="file.verilog" enable="0"/>
+        <File path="src/full_system_top.cst" type="file.cst" enable="1"/>
+        <File path="src/full_system_top.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

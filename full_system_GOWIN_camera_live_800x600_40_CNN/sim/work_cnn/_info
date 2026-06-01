@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dE:/Codework/DACSN/FPGA_GOWIN/full_system/full_system_GOWIN_camera_live_800x600_40_CNN
 vbutton_debounce
-Z1 !s110 1780227778
+Z1 !s110 1780277741
 !i10b 1
 !s100 C4;`6GbF=[N3;`=FPT8_X3
 I3Ik:>WdRH@lVEBE[N=`nY0
@@ -23,8 +23,8 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1780227778.000000
-Z5 !s107 src/cnn/cnn_quant_params.vh|sim/tb_camera_live_state_flow.v|sim/tb_cnn_reduced_top_integration.v|sim/tb_cnn_system.v|sim/tb_cnn_compute_lwdd.v|sim/tb_cnn_param_streamer.v|sim/tb_leaf_cnn_index_helpers.v|sim/tb_leaf_cnn_helpers.v|sim/tb_mnist28_upscale_renderer.v|sim/cnn_spi_flash_param_model.v|src/streaming_mnist_preload_packer.v|src/video/mnist28_upscale_renderer.v|src/video/mnist28_row_cache_bridge.v|src/cnn/cnn_system.v|src/cnn/cnn_compute_lwdd.v|src/cnn/cnn_param_streamer.v|src/cnn/cnn_spi_flash_reader.v|src/cnn/cnn_word_cache_buffer.v|src/cnn/cnn_feature_buffer.v|src/cnn/cnn_argmax.v|src/camera_live_flow_control.v|src/button_debounce.v|src/leaf_cells/leaf_relu_shift_sat.v|src/leaf_cells/leaf_input_u8_to_i16.v|src/leaf_cells/leaf_sext32_to_acc.v|src/leaf_cells/leaf_select_i16.v|src/leaf_cells/leaf_scalar_c2.v|src/leaf_cells/leaf_scalar_c1.v|src/leaf_cells/leaf_scalar_c5.v|src/leaf_cells/leaf_c5_cache_word.v|src/leaf_cells/leaf_conv6_word_offset.v|src/leaf_cells/leaf_c5_word_offset.v|src/leaf_cells/leaf_addr_7c16.v|src/leaf_cells/leaf_addr_7c8.v|src/leaf_cells/leaf_addr_14c4.v|src/leaf_cells/leaf_addr_img28.v|src/leaf_cells/leaf_addr_28_mul_shiftadd.v|src/leaf_cells/leaf_multiplier.v|
+Z4 !s108 1780277741.000000
+Z5 !s107 src/cnn/cnn_quant_params.vh|sim/tb_streaming_mnist_capture_equivalence.v|sim/tb_camera_live_state_flow.v|sim/tb_cnn_reduced_top_integration.v|sim/tb_cnn_system.v|sim/tb_cnn_compute_lwdd.v|sim/tb_cnn_param_streamer.v|sim/tb_leaf_mnist_helpers.v|sim/tb_leaf_cnn_index_helpers.v|sim/tb_leaf_cnn_helpers.v|sim/tb_mnist28_upscale_renderer.v|sim/tb_cdc_result_class_latch.v|sim/tb_sevenseg_digit_overlay.v|sim/tb_digit_to_7seg.v|sim/cnn_spi_flash_param_model.v|sim/reference/image_processing_vfb_stream.v|src/streaming_mnist_capture.v|src/streaming_mnist_preload_packer.v|src/video/mnist28_upscale_renderer.v|src/video/mnist28_row_cache_bridge.v|src/cnn/cnn_system.v|src/cnn/cnn_compute_lwdd.v|src/cnn/cnn_param_streamer.v|src/cnn/cnn_spi_flash_reader.v|src/cnn/cnn_word_cache_buffer.v|src/cnn/cnn_feature_buffer.v|src/cnn/cnn_argmax.v|src/camera_live_flow_control.v|src/button_debounce.v|src/video/result_overlay_mux.v|src/video/sevenseg_digit_overlay.v|src/video/digit_to_7seg.v|src/cdc/cdc_result_class_latch.v|src/leaf_cells/leaf_relu_shift_sat.v|src/leaf_cells/leaf_input_u8_to_i16.v|src/leaf_cells/leaf_sext32_to_acc.v|src/leaf_cells/leaf_select_i16.v|src/leaf_cells/leaf_mnist_addr_28x28.v|src/leaf_cells/leaf_mnist_threshold_invert.v|src/leaf_cells/leaf_rgb565_green_to_gray.v|src/leaf_cells/leaf_scalar_dense.v|src/leaf_cells/leaf_scalar_c2.v|src/leaf_cells/leaf_scalar_c1.v|src/leaf_cells/leaf_scalar_c5.v|src/leaf_cells/leaf_c5_cache_word.v|src/leaf_cells/leaf_conv6_word_offset.v|src/leaf_cells/leaf_c5_word_offset.v|src/leaf_cells/leaf_addr_7c16.v|src/leaf_cells/leaf_addr_7c8.v|src/leaf_cells/leaf_addr_14c4.v|src/leaf_cells/leaf_addr_img28.v|src/leaf_cells/leaf_addr_28_mul_shiftadd.v|src/leaf_cells/leaf_multiplier.v|sim/reference/leaf_cells/leaf_subtractor.v|src/leaf_cells/leaf_adder.v|
 Z6 !s90 -work|sim/work_cnn|-f|sim/cnn_tests.prj|
 !i113 1
 Z7 o-work sim/work_cnn
@@ -37,10 +37,32 @@ R1
 Ik2NAWckinJXY:SP:zXf_B3
 R2
 R0
-w1780051214
+w1780240806
 8src/camera_live_flow_control.v
 Fsrc/camera_live_flow_control.v
 L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vcdc_result_class_latch
+R1
+!i10b 1
+!s100 5jcF8_7QJ6aeULMGDm?Jh1
+Ikd`;[3LBX_<TRN;C;hSb;2
+R2
+R0
+Z10 w1780276345
+8src/cdc/cdc_result_class_latch.v
+Fsrc/cdc/cdc_result_class_latch.v
+L0 10
 R3
 r1
 !s85 0
@@ -77,11 +99,11 @@ R9
 vcnn_compute_lwdd
 R1
 !i10b 1
-!s100 LiWz5La<COW8Xg:lJec8Y2
-IoOAC=;nMIc4cYL736ngW=2
+!s100 8^<0hALjb=4H=cc`31fJ;0
+I]Q5gZ[I]nFf^VX4SidOlX2
 R2
 R0
-w1780227744
+w1780246373
 8src/cnn/cnn_compute_lwdd.v
 Fsrc/cnn/cnn_compute_lwdd.v
 L0 4
@@ -147,7 +169,7 @@ R1
 IL=kOd@SUza33=14fSYef^1
 R2
 R0
-Z10 w1779701424
+Z11 w1779701424
 8sim/cnn_spi_flash_param_model.v
 Fsim/cnn_spi_flash_param_model.v
 L0 3
@@ -169,7 +191,7 @@ R1
 INW5XXADJAMkabMEU3iBQ:0
 R2
 R0
-w1779706405
+w1780246713
 8src/cnn/cnn_spi_flash_reader.v
 Fsrc/cnn/cnn_spi_flash_reader.v
 L0 3
@@ -228,6 +250,72 @@ R6
 R7
 R8
 R9
+vdigit_to_7seg
+R1
+!i10b 1
+!s100 d]EkPViM34[5G1_]AGF=f3
+IaRGHeoE5dWbhA[I6m^UOd2
+R2
+R0
+R10
+8src/video/digit_to_7seg.v
+Fsrc/video/digit_to_7seg.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vimage_processing_vfb_stream
+R1
+!i10b 1
+!s100 3ecV5Y<gU3iZMHj12AfT;1
+IMJ7MDRLl:ZNeBo7<5ZQbI1
+R2
+R0
+w1779540134
+8sim/reference/image_processing_vfb_stream.v
+Fsim/reference/image_processing_vfb_stream.v
+L0 11
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vleaf_adder
+R1
+!i10b 1
+!s100 QO_RD7?[PDhb:h8[g^<HL0
+IO5V=jP1SA7Q6[WF5mfLBL0
+R2
+R0
+Z12 w1779504162
+8src/leaf_cells/leaf_adder.v
+Fsrc/leaf_cells/leaf_adder.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
 vleaf_addr_14c4
 R1
 !i10b 1
@@ -235,7 +323,7 @@ R1
 IS@Hh8zaE_62O[cdjOe1_N1
 R2
 R0
-Z11 w1780206590
+Z13 w1780206590
 8src/leaf_cells/leaf_addr_14c4.v
 Fsrc/leaf_cells/leaf_addr_14c4.v
 L0 3
@@ -279,7 +367,7 @@ R1
 IYASB4G]Zl``^^GoEd>[E_1
 R2
 R0
-R11
+R13
 8src/leaf_cells/leaf_addr_7c16.v
 Fsrc/leaf_cells/leaf_addr_7c16.v
 L0 3
@@ -301,7 +389,7 @@ R1
 I6kCQ:DLWO>RkfKFQ5bKfR1
 R2
 R0
-R11
+R13
 8src/leaf_cells/leaf_addr_7c8.v
 Fsrc/leaf_cells/leaf_addr_7c8.v
 L0 3
@@ -323,7 +411,7 @@ R1
 I5;BB]CEW8TJ:JW3^8E61U3
 R2
 R0
-R11
+R13
 8src/leaf_cells/leaf_addr_img28.v
 Fsrc/leaf_cells/leaf_addr_img28.v
 L0 3
@@ -367,7 +455,7 @@ R1
 IZ:e2_AB:H;8RhE;lDi7VQ2
 R2
 R0
-Z12 w1780218011
+Z14 w1780218011
 8src/leaf_cells/leaf_c5_word_offset.v
 Fsrc/leaf_cells/leaf_c5_word_offset.v
 L0 3
@@ -389,7 +477,7 @@ R1
 IaE3:7Vm;^`[;ai^9K`7CD0
 R2
 R0
-R12
+R14
 8src/leaf_cells/leaf_conv6_word_offset.v
 Fsrc/leaf_cells/leaf_conv6_word_offset.v
 L0 3
@@ -411,9 +499,53 @@ R1
 ICL4`VGMJT1b3YIa>`96EU3
 R2
 R0
-R11
+R13
 8src/leaf_cells/leaf_input_u8_to_i16.v
 Fsrc/leaf_cells/leaf_input_u8_to_i16.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vleaf_mnist_addr_28x28
+R1
+!i10b 1
+!s100 bOSg9LBNUMl?0fe2X6_hg1
+I;K@O@2G0G2PcGTV6YgX[T3
+R2
+R0
+R10
+8src/leaf_cells/leaf_mnist_addr_28x28.v
+Fsrc/leaf_cells/leaf_mnist_addr_28x28.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vleaf_mnist_threshold_invert
+R1
+!i10b 1
+!s100 GXgmHaENzWNhYS7N_l<_?0
+IW]Igbag8lWl7=CD_G3QJ]0
+R2
+R0
+R10
+8src/leaf_cells/leaf_mnist_threshold_invert.v
+Fsrc/leaf_cells/leaf_mnist_threshold_invert.v
 L0 3
 R3
 r1
@@ -433,7 +565,7 @@ R1
 IBV33Zn^VS@YRdJPmQdcm=3
 R2
 R0
-w1779504162
+R12
 8src/leaf_cells/leaf_multiplier.v
 Fsrc/leaf_cells/leaf_multiplier.v
 L0 3
@@ -458,6 +590,28 @@ R0
 w1780206682
 8src/leaf_cells/leaf_relu_shift_sat.v
 Fsrc/leaf_cells/leaf_relu_shift_sat.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vleaf_rgb565_green_to_gray
+R1
+!i10b 1
+!s100 `]AiZT4gOYQS=Ga8><heH0
+I<Ji4Bge<kJ=;l<dmSk>P]1
+R2
+R0
+w1780246584
+8src/leaf_cells/leaf_rgb565_green_to_gray.v
+Fsrc/leaf_cells/leaf_rgb565_green_to_gray.v
 L0 3
 R3
 r1
@@ -536,6 +690,28 @@ R6
 R7
 R8
 R9
+vleaf_scalar_dense
+R1
+!i10b 1
+!s100 @JmN[1i7jnXj4Nc8@IF1^3
+IoDdbkU6la7Z9]G9B;PF=G3
+R2
+R0
+w1780244781
+8src/leaf_cells/leaf_scalar_dense.v
+Fsrc/leaf_cells/leaf_scalar_dense.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
 vleaf_select_i16
 R1
 !i10b 1
@@ -543,7 +719,7 @@ R1
 I`jaN^nQ>95j>jY`[Q3RM33
 R2
 R0
-R11
+R13
 8src/leaf_cells/leaf_select_i16.v
 Fsrc/leaf_cells/leaf_select_i16.v
 L0 3
@@ -565,9 +741,31 @@ R1
 IXP<Xz8?nLAQa_><mG;o`80
 R2
 R0
-R11
+R13
 8src/leaf_cells/leaf_sext32_to_acc.v
 Fsrc/leaf_cells/leaf_sext32_to_acc.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vleaf_subtractor
+R1
+!i10b 1
+!s100 MhFQclUTK1OJD`hck1V3Z2
+Ifc1Z=TEd64N8FN;E?A@jW1
+R2
+R0
+w1779507357
+8sim/reference/leaf_cells/leaf_subtractor.v
+Fsim/reference/leaf_cells/leaf_subtractor.v
 L0 3
 R3
 r1
@@ -624,6 +822,72 @@ R6
 R7
 R8
 R9
+vresult_overlay_mux
+R1
+!i10b 1
+!s100 <GC4GM`d2451D:EV6jVQ82
+I:fhTLcgOX>zX<a]@j3Ule3
+R2
+R0
+R10
+8src/video/result_overlay_mux.v
+Fsrc/video/result_overlay_mux.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vsevenseg_digit_overlay
+R1
+!i10b 1
+!s100 YK6^edEz0XAlNfD0o3IQ_0
+IzVN1m4mFeVKi4191Noji=2
+R2
+R0
+Z15 w1780277559
+8src/video/sevenseg_digit_overlay.v
+Fsrc/video/sevenseg_digit_overlay.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vstreaming_mnist_capture
+R1
+!i10b 1
+!s100 ^3TI]NUdXjdE2GcP;;VU[2
+IN7_d[TAS?[CMUGZ3W^6^W2
+R2
+R0
+R10
+8src/streaming_mnist_capture.v
+Fsrc/streaming_mnist_capture.v
+L0 16
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
 vstreaming_mnist_preload_packer
 R1
 !i10b 1
@@ -668,6 +932,28 @@ R6
 R7
 R8
 R9
+vtb_cdc_result_class_latch
+R1
+!i10b 1
+!s100 mT^F4lPAlNS:4V?eT]@Qb0
+IPdX0zRnjAIi>FPbFk132d1
+R2
+R0
+w1780276443
+8sim/tb_cdc_result_class_latch.v
+Fsim/tb_cdc_result_class_latch.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
 vtb_cnn_compute_lwdd
 R1
 !i10b 1
@@ -697,7 +983,7 @@ R1
 IjDMMVC5KEG0Sn5;EJRX=W1
 R2
 R0
-R10
+R11
 8sim/tb_cnn_param_streamer.v
 Fsim/tb_cnn_param_streamer.v
 L0 3
@@ -756,6 +1042,28 @@ R6
 R7
 R8
 R9
+vtb_digit_to_7seg
+R1
+!i10b 1
+!s100 lT4cQWOVoP>=5BWITWzGE1
+IW=H[A2IB8oGPSX^7dR]MG0
+R2
+R0
+Z16 w1780276428
+8sim/tb_digit_to_7seg.v
+Fsim/tb_digit_to_7seg.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
 vtb_leaf_cnn_helpers
 R1
 !i10b 1
@@ -781,13 +1089,35 @@ R9
 vtb_leaf_cnn_index_helpers
 R1
 !i10b 1
-!s100 ZJ7=jK5`^fjQC5W1>@51j0
-IzSNZN[:]PlNDJS?AZK8LH0
+!s100 Ol;h[h]I7h:67XlOS`03z2
+ISe3O4?3S;n95JoXz_7kYD1
 R2
 R0
-w1780227762
+w1780246390
 8sim/tb_leaf_cnn_index_helpers.v
 Fsim/tb_leaf_cnn_index_helpers.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vtb_leaf_mnist_helpers
+R1
+!i10b 1
+!s100 MSB<PdG`c>EzoZWE5chPl1
+Ib2deYQNj2>@=52M7c`cJ;1
+R2
+R0
+R16
+8sim/tb_leaf_mnist_helpers.v
+Fsim/tb_leaf_mnist_helpers.v
 L0 3
 R3
 r1
@@ -810,6 +1140,50 @@ R0
 w1780198900
 8sim/tb_mnist28_upscale_renderer.v
 Fsim/tb_mnist28_upscale_renderer.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vtb_sevenseg_digit_overlay
+R1
+!i10b 1
+!s100 M`8b]zhd:iEoaj0o=g6^40
+I_djHj0meO7iiTZ>>Hn=mK0
+R2
+R0
+R15
+8sim/tb_sevenseg_digit_overlay.v
+Fsim/tb_sevenseg_digit_overlay.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+R9
+vtb_streaming_mnist_capture_equivalence
+R1
+!i10b 1
+!s100 :[AL4:Yd2iYg5BZkKLh9g1
+I=XN]:OM2:G[`_QRKHD:m93
+R2
+R0
+w1779587545
+8sim/tb_streaming_mnist_capture_equivalence.v
+Fsim/tb_streaming_mnist_capture_equivalence.v
 L0 3
 R3
 r1

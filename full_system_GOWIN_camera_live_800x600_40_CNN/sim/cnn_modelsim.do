@@ -13,7 +13,27 @@ vsim -onfinish stop -lib sim/work_cnn tb_leaf_cnn_index_helpers
 run -all
 quit -sim
 
+vsim -onfinish stop -lib sim/work_cnn tb_leaf_mnist_helpers
+run -all
+quit -sim
+
+vsim -onfinish stop -lib sim/work_cnn tb_digit_to_7seg
+run -all
+quit -sim
+
+vsim -onfinish stop -lib sim/work_cnn tb_sevenseg_digit_overlay
+run -all
+quit -sim
+
+vsim -onfinish stop -lib sim/work_cnn tb_cdc_result_class_latch
+run -all
+quit -sim
+
 vsim -onfinish stop -lib sim/work_cnn tb_camera_live_state_flow
+run -all
+quit -sim
+
+vsim -onfinish stop -lib sim/work_cnn tb_streaming_mnist_capture_equivalence
 run -all
 quit -sim
 

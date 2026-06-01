@@ -2,6 +2,14 @@
 
 Date: 2026-05-31
 
+## Relaxed Acceptance Update
+
+The later relaxed structural-candidate phase keeps `leaf_scalar_dense` after re-testing against the softer timing policy. See `reports/structural_candidate_refactor_report.md` for the current accepted/rejected list and final metrics.
+
+## 2026-06-01 Overlay Phase Update
+
+The current source tree also includes the later HDMI seven-segment result overlay and result CDC work. See `reports/sevenseg_overlay_and_wrapper_refactor_report.md` for the accepted final metrics and the added display/MNIST helper wrappers.
+
 ## Scope
 
 Phase 1 was completed for `src/cnn/cnn_compute_lwdd.v`: the small CNN helper functions for activation addressing, word selection, sign extension, input conversion, and ReLU/shift/saturation were converted into explicit combinational leaf-cell modules under `src/leaf_cells/`. Phases 2 and 3 then converted only the parameter/cache/scalar helpers that stayed resource/timing neutral after full simulation and Gowin PnR.
